@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIBarPositioningDelegate {
   
   @IBOutlet weak var tallyLabel: UILabel!
   @IBOutlet weak var tapOrHoldButton: UIButton!
@@ -53,6 +53,10 @@ class ViewController: UIViewController {
   
   private func updateLabels() {
     tallyLabel.text = String(count)
+  }
+  
+  func position(for bar: UIBarPositioning) -> UIBarPosition {
+    return .topAttached
   }
 }
 
