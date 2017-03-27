@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HaO-AW-3Gh">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9d9-nY-r92">
+            <objects>
+                <navigationController id="HaO-AW-3Gh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LaX-HQ-ysv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UdC-4G-Fc0" kind="relationship" relationship="rootViewController" id="LIu-cr-Qms"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoq-hC-1o0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-296" y="868"/>
+        </scene>
+        <!--Notepad-->
+        <scene sceneID="rRe-yh-yaP">
+            <objects>
+                <viewController id="UdC-4G-Fc0" customClass="NoteViewController" customModule="PassingDataToAnotherView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rWD-pQ-gyZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgr-hR-Pfz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TbI-c1-Rly">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="seN-3D-WMC">
+                                <rect key="frame" x="8" y="72" width="304" height="488"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="-900" maxX="0.0" maxY="0.0"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="seN-3D-WMC" firstAttribute="top" secondItem="rWD-pQ-gyZ" secondAttribute="bottom" constant="8" id="6sb-od-4oV"/>
+                            <constraint firstItem="seN-3D-WMC" firstAttribute="leading" secondItem="TbI-c1-Rly" secondAttribute="leading" constant="8" id="Mo4-1J-wRg"/>
+                            <constraint firstAttribute="bottom" secondItem="seN-3D-WMC" secondAttribute="bottom" constant="8" id="PW2-RB-WNd"/>
+                            <constraint firstAttribute="trailing" secondItem="seN-3D-WMC" secondAttribute="trailing" constant="8" id="lqg-cb-ZGz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notepad" id="8As-yB-ufF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="OZt-61-gdD">
+                            <connections>
+                                <segue destination="IhF-ER-h1m" kind="show" identifier="ShowPreview" id="EM0-tn-tUJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noteTextView" destination="seN-3D-WMC" id="JmS-PT-zXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wb-wH-5vp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451.875" y="866.19718309859161"/>
+        </scene>
+        <!--Note Preview View Controller-->
+        <scene sceneID="Pvt-D6-kxM">
+            <objects>
+                <viewController id="IhF-ER-h1m" customClass="NotePreviewViewController" customModule="PassingDataToAnotherView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="epi-Bn-kZ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBE-Ua-2IG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MWB-Qh-Tyb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gav-E0-92X">
+                                <rect key="frame" x="8" y="72" width="304" height="488"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gav-E0-92X" secondAttribute="trailing" constant="8" id="HjE-M0-OFc"/>
+                            <constraint firstItem="gav-E0-92X" firstAttribute="top" secondItem="epi-Bn-kZ7" secondAttribute="bottom" constant="8" id="Vg8-ch-XcE"/>
+                            <constraint firstItem="gav-E0-92X" firstAttribute="leading" secondItem="MWB-Qh-Tyb" secondAttribute="leading" constant="8" id="Xj6-FD-ySB"/>
+                            <constraint firstItem="BBE-Ua-2IG" firstAttribute="top" secondItem="gav-E0-92X" secondAttribute="bottom" constant="8" id="kyQ-yt-pQB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notePreviewTextView" destination="gav-E0-92X" id="hvk-jS-0eP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPj-cM-9Du" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207.5" y="865.14084507042253"/>
+        </scene>
+    </scenes>
+</document>
