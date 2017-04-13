@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dTZ-ch-Xzd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Display Photo View Controller-->
+        <scene sceneID="L23-8F-BeR">
+            <objects>
+                <viewController id="dTZ-ch-Xzd" customClass="DisplayPhotoViewController" customModule="AddPhotoFromCameraRoll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dL9-Uj-TbH"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYw-5G-R5d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vIP-ZK-6k1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lgc-vB-4St">
+                                <rect key="frame" x="16" y="28" width="343" height="343"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="aog-5k-gMo"/>
+                                    <constraint firstAttribute="height" constant="343" id="uVC-Me-t7j"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyJ-2e-qUc">
+                                <rect key="frame" x="111" y="379" width="154" height="61"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.66274509800000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="OnI-Pu-jTs"/>
+                                    <constraint firstAttribute="height" constant="61" id="bx5-7L-als"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pickPhotoButton:" destination="dTZ-ch-Xzd" eventType="touchUpInside" id="d3K-Rb-k8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lgc-vB-4St" firstAttribute="trailing" secondItem="vIP-ZK-6k1" secondAttribute="trailingMargin" id="1e6-B8-7qm"/>
+                            <constraint firstItem="HyJ-2e-qUc" firstAttribute="top" secondItem="Lgc-vB-4St" secondAttribute="bottom" constant="8" id="Fg1-eU-JS5"/>
+                            <constraint firstItem="Lgc-vB-4St" firstAttribute="leading" secondItem="vIP-ZK-6k1" secondAttribute="leadingMargin" id="J3N-Ge-eAg"/>
+                            <constraint firstItem="HyJ-2e-qUc" firstAttribute="centerX" secondItem="vIP-ZK-6k1" secondAttribute="centerX" id="TAq-02-wAe"/>
+                            <constraint firstItem="Lgc-vB-4St" firstAttribute="top" secondItem="dL9-Uj-TbH" secondAttribute="bottom" constant="8" id="qOs-gf-5FA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagePhotoView" destination="Lgc-vB-4St" id="O9q-H1-RB8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdD-PF-Ztf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120.8" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>

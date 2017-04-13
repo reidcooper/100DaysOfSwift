@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1F6D0791E97BF0700BB8A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6D0781E97BF0700BB8A73 /* AppDelegate.swift */; };
+		D1F6D07B1E97BF0700BB8A73 /* DisplayPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6D07A1E97BF0700BB8A73 /* DisplayPhotoViewController.swift */; };
+		D1F6D0801E97BF0700BB8A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F6D07F1E97BF0700BB8A73 /* Assets.xcassets */; };
+		D1F6D0831E97BF0700BB8A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F6D0811E97BF0700BB8A73 /* LaunchScreen.storyboard */; };
+		D1F6D08B1E9D038000BB8A73 /* DisplayPhotoViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F6D08A1E9D038000BB8A73 /* DisplayPhotoViewStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1F6D0751E97BF0700BB8A73 /* AddPhotoFromCameraRoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddPhotoFromCameraRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F6D0781E97BF0700BB8A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1F6D07A1E97BF0700BB8A73 /* DisplayPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPhotoViewController.swift; sourceTree = "<group>"; };
+		D1F6D07F1E97BF0700BB8A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1F6D0821E97BF0700BB8A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1F6D0841E97BF0700BB8A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F6D08A1E9D038000BB8A73 /* DisplayPhotoViewStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayPhotoViewStoryboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F6D0721E97BF0700BB8A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1F6D06C1E97BF0700BB8A73 = {
+			isa = PBXGroup;
+			children = (
+				D1F6D0771E97BF0700BB8A73 /* AddPhotoFromCameraRoll */,
+				D1F6D0761E97BF0700BB8A73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F6D0761E97BF0700BB8A73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1F6D0751E97BF0700BB8A73 /* AddPhotoFromCameraRoll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1F6D0771E97BF0700BB8A73 /* AddPhotoFromCameraRoll */ = {
+			isa = PBXGroup;
+			children = (
+				D1F6D0781E97BF0700BB8A73 /* AppDelegate.swift */,
+				D1F6D07A1E97BF0700BB8A73 /* DisplayPhotoViewController.swift */,
+				D1F6D08A1E9D038000BB8A73 /* DisplayPhotoViewStoryboard.storyboard */,
+				D1F6D07F1E97BF0700BB8A73 /* Assets.xcassets */,
+				D1F6D0811E97BF0700BB8A73 /* LaunchScreen.storyboard */,
+				D1F6D0841E97BF0700BB8A73 /* Info.plist */,
+			);
+			path = AddPhotoFromCameraRoll;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1F6D0741E97BF0700BB8A73 /* AddPhotoFromCameraRoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F6D0871E97BF0700BB8A73 /* Build configuration list for PBXNativeTarget "AddPhotoFromCameraRoll" */;
+			buildPhases = (
+				D1F6D0711E97BF0700BB8A73 /* Sources */,
+				D1F6D0721E97BF0700BB8A73 /* Frameworks */,
+				D1F6D0731E97BF0700BB8A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddPhotoFromCameraRoll;
+			productName = AddPhotoFromCameraRoll;
+			productReference = D1F6D0751E97BF0700BB8A73 /* AddPhotoFromCameraRoll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1F6D06D1E97BF0700BB8A73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Reid Cooper";
+				TargetAttributes = {
+					D1F6D0741E97BF0700BB8A73 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D1F6D0701E97BF0700BB8A73 /* Build configuration list for PBXProject "AddPhotoFromCameraRoll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1F6D06C1E97BF0700BB8A73;
+			productRefGroup = D1F6D0761E97BF0700BB8A73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F6D0741E97BF0700BB8A73 /* AddPhotoFromCameraRoll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1F6D0731E97BF0700BB8A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F6D08B1E9D038000BB8A73 /* DisplayPhotoViewStoryboard.storyboard in Resources */,
+				D1F6D0831E97BF0700BB8A73 /* LaunchScreen.storyboard in Resources */,
+				D1F6D0801E97BF0700BB8A73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1F6D0711E97BF0700BB8A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F6D07B1E97BF0700BB8A73 /* DisplayPhotoViewController.swift in Sources */,
+				D1F6D0791E97BF0700BB8A73 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1F6D0811E97BF0700BB8A73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1F6D0821E97BF0700BB8A73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1F6D0851E97BF0700BB8A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1F6D0861E97BF0700BB8A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1F6D0881E97BF0700BB8A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AddPhotoFromCameraRoll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bombasticblastinbeats.AddPhotoFromCameraRoll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D1F6D0891E97BF0700BB8A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AddPhotoFromCameraRoll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bombasticblastinbeats.AddPhotoFromCameraRoll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1F6D0701E97BF0700BB8A73 /* Build configuration list for PBXProject "AddPhotoFromCameraRoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F6D0851E97BF0700BB8A73 /* Debug */,
+				D1F6D0861E97BF0700BB8A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F6D0871E97BF0700BB8A73 /* Build configuration list for PBXNativeTarget "AddPhotoFromCameraRoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F6D0881E97BF0700BB8A73 /* Debug */,
+				D1F6D0891E97BF0700BB8A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1F6D06D1E97BF0700BB8A73 /* Project object */;
+}
